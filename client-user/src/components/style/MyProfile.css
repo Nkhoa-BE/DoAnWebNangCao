@@ -1,0 +1,94 @@
+/* Container chính */
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #1a1a1f; /* Nền xám đen sâu */
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid #2a2a2e;
+}
+
+/* Tiêu đề */
+.profile-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Bố cục bảng trong Profile */
+.profile-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px; /* Tạo khoảng cách giữa các dòng */
+}
+
+.profile-table td {
+  padding: 5px;
+  color: #aaa;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Cột nhãn (Label) */
+.profile-table td:first-child {
+  width: 30%;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Input Fields */
+.profile-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: #0f0f12;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.profile-input:focus {
+  border-color: #4fc3f7;
+  box-shadow: 0 0 8px rgba(79, 195, 247, 0.2);
+  background: #16161a;
+}
+
+/* Nút Update */
+.btn-update {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-update:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.4);
+}
+
+.btn-update:active {
+  transform: translateY(0);
+}
+
+/* Hiệu ứng cho input khi có dữ liệu readonly (nếu cần) */
+.profile-input:disabled {
+  color: #666;
+  cursor: not-allowed;
+}

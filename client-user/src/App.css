@@ -1,0 +1,133 @@
+/* --- styles.css: Bố cục tổng thể --- */
+.body-customer {
+  width: 1200px; /* Nới rộng hơn một chút cho tin tức */
+  height: fit-content;
+  margin: 0px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0f;
+}
+
+.body-admin {
+  width: 95%; /* Giao diện Admin nên rộng để xem bảng dữ liệu */
+  height: fit-content;
+  margin: 0px auto;
+  background-color: #f8f9fa;
+}
+
+div.inline {
+  display: inline-block;
+}
+
+/* Hiển thị ảnh bài viết kèm mô tả bên phải */
+figure.caption-right {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.align-center {
+  width: fit-content;
+  margin: 0px auto;
+}
+
+/* Khung Login cho Admin/Reader */
+.align-valign-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+span.link {
+  cursor: pointer;
+  color: #1a73e8; /* Màu xanh hiện đại */
+  font-weight: 500;
+}
+
+span.link:hover {
+  text-decoration: underline;
+}
+
+/* --- menu.css: Thanh điều hướng tin tức --- */
+div.border-bottom {
+  border-bottom: 2px solid #333; /* Đậm hơn để phân tách Header */
+  padding: 15px 0px;
+  margin-bottom: 20px;
+}
+
+div.float-left { float: left; }
+div.float-right { float: right; }
+div.float-clear { clear: both; }
+
+ul.menu {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+li.menu {
+  display: inline;
+  margin-right: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+li.menu:hover {
+  color: #ff4500; /* Màu cam đậm chất Gaming khi di chuột qua */
+  cursor: pointer;
+}
+
+/* Thanh tìm kiếm bài viết */
+form.search {
+  margin: 0px;
+  display: flex;
+}
+
+input.keyword {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+/* --- datatable.css: Bảng danh sách bài viết/danh mục --- */
+.datatable {
+  width: 100%;
+  text-align: left; /* Tin tức nên để căn lề trái cho dễ đọc */
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+/* Header của bảng danh sách tin */
+.datatable tr:first-child {
+  background-color: #202124; /* Màu đen Tech */
+  color: white;
+}
+
+.datatable th, .datatable td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Dòng chẵn (trắng xám nhẹ) */
+.datatable tr:not(:first-child):nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Hiệu ứng khi di chuột qua bài viết trong danh sách admin */
+.datatable tr:not(:first-child):hover {
+  background-color: #e8f0fe;
+  cursor: pointer;
+}

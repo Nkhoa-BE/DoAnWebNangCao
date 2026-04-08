@@ -1,0 +1,103 @@
+/* Container */
+.align-center {
+  width: 90%;
+  max-width: 1100px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Title */
+.text-center {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Table - Quan trọng nhất là background */
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1a1a1a !important; /* Ép nền tối */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Header */
+.datatable th {
+  background-color: #252525 !important;
+  color: #aaa !important;
+  padding: 18px 15px;
+  text-align: center;
+  font-size: 13px;
+  border-bottom: 2px solid #333;
+}
+
+/* Dòng (Row) - Fix lỗi bị màu trắng */
+.datatable tr {
+  background-color: #1a1a1a !important; /* Đảm bảo dòng không bị trắng */
+  transition: all 0.3s ease;
+}
+
+.datatable tr:hover {
+  background-color: #222 !important; /* Highlight nhẹ khi di chuột */
+}
+
+/* Cell */
+.datatable td {
+  padding: 20px 15px;
+  color: #ccc !important;
+  border-bottom: 1px solid #2a2a2a;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Tiêu đề link - Fix chói */
+.datatable td:nth-child(3) {
+  text-align: left; /* Căn trái cho dễ đọc tiêu đề */
+}
+
+.datatable a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.5;
+  transition: 0.2s;
+}
+
+.datatable a:hover {
+  color: #4fc3f7 !important;
+}
+
+/* ID mờ đi */
+.datatable td:nth-child(2) {
+  font-size: 11px;
+  color: #555 !important;
+}
+
+/* Ảnh thumbnail */
+.datatable img {
+  border-radius: 6px;
+  border: 1px solid #333;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Nút Xóa */
+.link {
+  color: #ff5252 !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.link:hover {
+  background: rgba(255, 82, 82, 0.1);
+  text-decoration: underline;
+}
