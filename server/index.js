@@ -21,9 +21,9 @@ app.use('/admin', express.static(path.resolve(__dirname, '../client-admin/build'
 app.get('admin/*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client-admin/build', 'index.html'))
 });
-app.use('/', express.static(path.resolve(__dirname, '../client-customer/build')));
+app.use('/', express.static(path.resolve(__dirname, '../client-user/build')));
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client-customer/build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '../client-user/build', 'index.html'));
 });
 
 // start server
