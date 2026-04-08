@@ -1,0 +1,89 @@
+/* client-admin/src/components/style/Login.css */
+
+/* 1. Bao bọc toàn màn hình để canh giữa */
+.login-screen-wrapper {
+  display: flex;
+  justify-content: center; /* Canh giữa theo chiều ngang */
+  align-items: center;     /* Canh giữa theo chiều dọc */
+  min-height: 100vh;       /* Chiều cao tối thiểu là toàn màn hình */
+  background-color: #0f172a; /* Màu nền xanh đen tối, dịu mắt */
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+}
+
+/* 2. Khung Form đăng nhập */
+.login-form-box {
+  background-color: #1e293b; /* Nền form sáng hơn nền chính một chút để tạo khối */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4); /* Đổ bóng tạo chiều sâu */
+  width: 100%;
+  max-width: 400px; /* Chiều rộng tối đa của form */
+  text-align: center;
+}
+
+/* 3. Tiêu đề "ADMIN - GAME NEWS" */
+.login-title {
+  color: #e94560; /* Màu đỏ nhấn đặc trưng của Game */
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* 4. Định dạng các ô nhập liệu (Input) cho dễ thấy */
+.login-input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.login-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.login-form-box input[type="text"],
+.login-form-box input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #0f172a; /* Nền ô nhập liệu tối hơn nền form */
+  border: 1px solid #334155; /* Viền xám để dễ nhận biết */
+  border-radius: 6px;
+  color: #fff;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+/* Hiệu ứng khi nhấn vào ô nhập liệu */
+.login-form-box input[type="text"]:focus,
+.login-form-box input[type="password"]:focus {
+  border-color: #e94560; /* Viền chuyển sang màu đỏ khi focus */
+  outline: none;
+}
+
+/* 5. Nút Đăng nhập (Submit) */
+.login-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #e94560; /* Màu đỏ nhấn */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 10px;
+}
+
+.login-submit-btn:hover {
+  background-color: #ff5c7c; /* Sáng hơn khi hover */
+}
+
+.login-submit-btn:active {
+  transform: scale(0.98); /* Hiệu ứng nhấn nút */
+}

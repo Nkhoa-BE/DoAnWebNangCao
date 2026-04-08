@@ -1,0 +1,62 @@
+/* client-admin/src/components/style/Menu.css */
+
+.admin-navbar {
+  background-color: #1e293b; /* Màu xanh than sáng hơn nền */
+  border-bottom: 2px solid #e94560; /* Đường kẻ đỏ thương hiệu */
+  padding: 0 5%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Group Menu bên trái */
+.menu-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 30px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu-item a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 10px 0;
+}
+
+/* Hiệu ứng khi di chuột qua */
+.menu-item a:hover {
+  color: #e94560;
+  border-bottom: 2px solid #e94560;
+}
+
+/* Thông tin Admin bên phải */
+.admin-info {
+  color: #f8fafc;
+  font-size: 14px;
+}
+
+.admin-info b {
+  color: #e94560;
+  margin-left: 5px;
+}
+
+.logout-link {
+  margin-left: 15px;
+  color: #94a3b8 !important;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.logout-link:hover {
+  color: #ef4444 !important;
+}

@@ -1,0 +1,303 @@
+/* ===================== COMMENT MANAGEMENT CSS ===================== */
+
+.cm-wrap {
+  padding: 28px 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #e2e8f0;
+}
+
+/* ---- HEADER ---- */
+.cm-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.cm-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cm-header-icon {
+  font-size: 28px;
+}
+
+.cm-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #f1f5f9;       /* trắng sáng, dễ nhìn */
+  margin: 0 0 4px 0;
+}
+
+.cm-sub {
+  font-size: 13px;
+  color: #94a3b8;        /* xám nhạt, phụ đề */
+  margin: 0;
+}
+
+.cm-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #cbd5e1;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cm-refresh-btn:hover {
+  background: #334155;
+  color: #f1f5f9;
+}
+
+/* ---- TOOLBAR ---- */
+.cm-toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.cm-search-wrap {
+  flex: 1;
+  min-width: 220px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cm-search-ico {
+  position: absolute;
+  left: 12px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.cm-search {
+  width: 100%;
+  padding: 10px 36px 10px 36px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;         /* chữ nhập rõ ràng */
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cm-search::placeholder {
+  color: #64748b;
+}
+
+.cm-search:focus {
+  border-color: #38bdf8;
+}
+
+.cm-search-clear {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.cm-search-clear:hover {
+  color: #f1f5f9;
+  background: #334155;
+}
+
+.cm-filter-post {
+  padding: 10px 14px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #e2e8f0;         /* chữ select rõ ràng */
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  min-width: 200px;
+  transition: border-color 0.2s;
+}
+
+.cm-filter-post:focus {
+  border-color: #38bdf8;
+}
+
+/* ---- LOADING & EMPTY ---- */
+.cm-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 60px 0;
+  color: #94a3b8;
+}
+
+.cm-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #334155;
+  border-top-color: #38bdf8;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.cm-empty {
+  text-align: center;
+  padding: 60px 0;
+  color: #64748b;
+}
+
+.cm-empty-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* ---- COMMENT LIST ---- */
+.cm-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ---- COMMENT CARD ---- */
+.cm-card {
+  display: flex;
+  gap: 14px;
+  background: #1e293b;
+  border: 1px solid #273549;
+  border-radius: 12px;
+  padding: 16px 18px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.cm-card:hover {
+  border-color: #38bdf8;
+  background: #1a2840;
+}
+
+.cm-card-avatar {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0ea5e9, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 17px;
+  color: #fff;
+}
+
+.cm-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cm-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cm-card-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cm-card-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #f1f5f9;         /* tên người dùng sáng, dễ nhìn */
+}
+
+.cm-card-username {
+  font-size: 13px;
+  color: #38bdf8;         /* @username màu xanh nổi bật */
+}
+
+.cm-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cm-card-date {
+  font-size: 12px;
+  color: #94a3b8;         /* ngày giờ — xám nhạt nhưng vẫn đọc được */
+  white-space: nowrap;
+}
+
+.cm-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: #64748b;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cm-delete-btn:hover {
+  background: #3b1f1f;
+  color: #f87171;
+}
+
+/* ---- NỘI DUNG BÌNH LUẬN ---- */
+.cm-card-content {
+  font-size: 14px;
+  color: #cbd5e1;         /* nội dung — trắng đủ sáng */
+  line-height: 1.6;
+  margin: 0 0 10px 0;
+  word-break: break-word;
+}
+
+/* ---- THÔNG TIN BÀI VIẾT (thay thế Post ID hex) ---- */
+.cm-card-post-ref {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 4px 10px;
+  max-width: 100%;
+}
+
+.cm-card-post-label {
+  font-size: 11px;
+  color: #64748b;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.cm-card-post-title {
+  font-size: 12px;
+  color: #38bdf8;         /* tên bài viết — xanh nổi bật, dễ đọc */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+  font-weight: 500;
+}
